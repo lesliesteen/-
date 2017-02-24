@@ -1,0 +1,3301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Sam Lowry</title>
+	  <script src="jquery-1.12.4.min.js"></script>
+<style>
+	
+body {
+_background-image:url(./assets/Background3.gif);
+background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  background-color: #ccc!important; 
+ }   
+ 
+ 
+ 
+ div {
+	 box-shadow:7px 5px 23px black;
+	 opacity: 1!important;
+	 background-color: #ccc!important;
+	 }
+	 
+	 
+.dream {
+	box-shadow:none;
+	background:none!important;
+} 
+    
+.button {
+    background-color: white;
+	border: 1px solid black;
+    color: black;
+    border-radius: 25px;
+    font-family: 'Didot';
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+#dream{
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	z-index: 30000000000000;
+}	
+
+
+#pop{
+	height: 70px;
+	width: 350px;
+	position: fixed;
+	bottom: 50%;
+	right: 50%;
+	border:1px solid black;
+	padding: 10px;
+	background: aqua;
+	font-family: "Chicago";
+	font-size: 26px;
+	opacity: 0.6;
+	line-height: 25px;
+	text-align: center;
+ }
+ 
+ #pop2{
+	height: 230px;
+	width: 300px;
+	position: fixed;
+	bottom: 30%;
+	right: -20%;
+	border:1px solid black;
+	padding: 10px;
+	background: yellow;
+	font-family: "Chicago";
+	font-size: 52px;
+	opacity: 0.6;
+	line-height: 51px;
+	text-align: center;
+	}
+	
+  #pop3{
+	height: 180px;
+	width: 200px;
+	position: fixed;
+	bottom: 60%;
+	right: 30%;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	font-size: 52px;
+	opacity: 0.6;
+	color: blue;
+	line-height: 51px;
+	text-align: center;
+	-webkit-animation-name: travel2;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 4.8s;
+
+    animation-name: travel2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 4.8s;
+  }
+  
+  @-webkit-keyframes travel {
+    from {              }
+    to   { left: 640px; }
+  }
+  @keyframes travel {
+    from {              }
+    to   { left: 640px; }
+  }
+
+  @-webkit-keyframes travel2 {
+    from {              }
+    to   {top: 640px; }
+  }
+  @keyframes travel2 {
+    from {              }
+    to   { top:  640px; }
+  }
+  
+    @-webkit-keyframes travel3 {
+    from {              }
+    to   { left: 1400px; }
+  }
+  @keyframes travel3 {
+    from {              }
+    to   { left: 1400px; }
+  }
+  
+
+ 
+  #pop4{
+  	height: 700px;
+  	width: 900px;
+  	position: fixed;
+	bottom: -20%;
+	right: 30%;
+	border:1px solid black;
+	padding: 10px;
+	background: aqua;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 120px;
+	opacity: 0.6;
+	
+
+ }
+ 
+ 
+#pop5{
+	position: fixed;
+	bottom: 35%;
+	right: 40%;
+	font-family: "Deutsch Gothic";
+	font-size: 72px;
+	line-height: 71px;
+	font-style: italic;
+	color: yellow;
+	}
+ 
+
+
+ #pop6{
+	height: 234px;
+	width: 134px;
+	position: fixed;
+	bottom: -5%;
+	right: 60%;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 52px;
+	opacity: 0.6;
+	line-height: 51px;
+
+
+}
+
+ 
+ #pop7{
+	height: 90px;
+	width: 190px;
+	position: fixed;
+	bottom: 50%;
+	right: -20%;
+	border:1px solid black;
+	padding: 10px;
+	background: -webkit-linear-gradient(#ffffff 0%, #cccccc 100%);
+	font-family: "Chicago";
+	font-size: 82px;
+	text-align: left;
+	opacity: 0.6;
+	line-height: 81px;
+ }
+
+ #pop8{
+	height: 180px;
+	width: 200px;
+	position: fixed;
+	bottom: -10%;
+	right: 90%;
+	border:1px solid black;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 52px;
+	opacity: 0.6;
+	line-height: 51px;
+
+
+ }
+ 
+  #pop9{
+	height: 200px;
+	width: 429px;
+	line-height: 59px;
+	position: fixed;
+	bottom: -14%;
+	right: 40%;
+	border:1px solid black;
+	padding: 10px;
+	background: fuchsia;
+	text-align: center;
+	font-family: "Chicago";
+	font-size: 60px;
+	opacity: 0.6;
+
+
+ }
+
+  #pop10{
+	height: 50px;
+	width: 140px;
+	line-height: 27px;
+	position: fixed;
+	bottom: 37%;
+	right: 52%;
+	border:1px solid black;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 28px;
+	line-height: 27px;
+	opacity: 0.6;
+		-webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 3s;
+	-webkit-animation-delay: 2.8s;
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2.8s;
+  }
+
+
+ 
+   #pop11{
+	height: 500px;
+	width: 350px;
+	position: fixed;
+	bottom: 90%;
+	right: 23%;
+	border:1px solid white;
+	text-align: left;
+	padding: 10px;
+	background: -webkit-linear-gradient(#ffffff 0%, #cccccc 100%);
+	font-family: "Chicago";
+	font-size: 38px;
+	opacity: 0.6;
+	line-height: 37px;
+
+
+ }
+ 
+   #pop12{
+	height: 200px;
+	width: 200px;
+	position: fixed;
+	bottom: 47%;
+	right: 36%;
+	border:1px solid black;
+	text-align: center;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	font-size: 36px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop13{
+	height: 380px;
+	width: 350px;
+	line-height: 71px;
+	position: fixed;
+	bottom: 1%;
+	right: 25%;
+	border:1px solid black;
+	text-align: left;
+	padding: 10px;
+	background: -webkit-linear-gradient(#cccccc 0%, #ffffff 100%);
+	font-family: "Chicago";
+	font-size: 72px;
+	line-height: 69px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop14{
+	bottom: 34%;
+	right: -34%;
+	font-family: "Deutsch Gothic";
+	font-size: 120px;
+	line-height: 117px;
+	color: blue;
+	position: fixed;
+	-webkit-animation-name: travel2;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 3s;
+
+    animation-name: travel2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+  }
+
+   #pop15{
+	height: 250px;
+	width: 350px;
+	position: fixed;
+	bottom: 20%;
+	right: 48%;
+	border:1px solid black;
+	padding: 10px;
+	background: aqua;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 43px;
+	line-height: 42px;
+	opacity: 0.6;
+
+
+ }
+ 
+ #pop16{
+	height: 100px;
+	width: 350px;
+	position: fixed;
+	bottom: 20%;
+	right: 20%;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 26px;
+	line-height: 25px;
+	opacity: 0.6;
+		-webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 9.8s;
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 9.8s;
+  }
+
+	
+
+ #pop17{
+	height: 230px;
+	width: 300px;
+	position: fixed;
+	bottom: 38%;
+	right: 59%;
+	border:1px solid black;
+	padding: 10px;
+	background: fuchsia;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+
+	
+ }
+ 
+  #pop18{
+	height: 180px;
+	width: 200px;
+	line-height: 50px;
+	position: fixed;
+	bottom: 90%;
+	right: 46%;
+	border:1px solid black;
+	padding: 10px;
+	background: yellow;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+ }
+ 
+  #pop19{
+	height: 250px;
+	width: 200px;
+	position: fixed;
+	bottom: 48%;
+	right: 32%;
+	border:1px solid black;
+	padding: 10px;
+	background: yellow;
+	text-align: center;
+	font-family: "Chicago";
+	font-size: 32px;
+	line-height: 31px;
+	opacity: 0.6;
+
+ }
+ 
+ 
+#pop20{
+	height: 60px;
+	width: 210px;
+	position: fixed;
+	bottom: 29%;
+	right: 58%;
+	border:1px solid black;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 25px;
+	line-height: 24px;
+		font-style: italic;
+		opacity: 0.6;
+
+ }
+ 
+ #pop21{
+	height: 400px;
+	width: 300px;
+	line-height: 51px;
+	position: fixed;
+	bottom: 88%;
+	right: 63%;
+	border:1px solid black;
+	text-align: center;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+
+
+ }
+ 
+ #pop22{
+	height: 300px;
+	width: 190px;
+	position: fixed;
+	bottom: 57%;
+	text-align: left;
+	right: 90%;
+	border:1px solid black;
+	padding: 10px;
+	background: -webkit-linear-gradient(#cccccc 0%, #ffffff 100%);
+	font-family: "Chicago";
+	font-size: 12px;
+	opacity: 0.6;
+		-webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 1s;
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+  }
+
+
+
+ #pop23{
+	height: 350px;
+	width: 200px;
+	position: fixed;
+	line-height: 66px;
+	bottom: 85%;
+	right: -14%;
+	border:1px solid black;
+	text-align: center;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	font-size: 67px;
+	line-height: 66px;
+	opacity: 0.6;
+
+
+ }
+ 
+  #pop24{
+	height: 200px;
+	width: 350px;
+	position: fixed;
+	bottom: 57%;
+	right: 78%;
+	border:1px solid black;
+	text-align: center;
+	padding: 10px;
+	background: aqua;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+
+ }
+
+  #pop25{
+	height: 50px;
+	width: 350px;
+	position: fixed;
+	bottom: 69%;
+	right: 92%;
+	border:1px solid black;
+	text-align: center;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	font-size: 18px;
+	line-height: 17px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop26{
+	height: 200px;
+	width: 350px;
+	position: fixed;
+	bottom: 49%;
+	right: 24%;
+	border:1px solid white;
+	text-align: left;
+	padding: 10px;
+	background: -webkit-linear-gradient(#ffffff 0%, #cccccc 100%);
+	font-family: "Chicago";
+	font-size: 38px;
+	line-height: 37px;
+	opacity: 0.6;
+	
+
+ }
+ 
+   #pop27{
+	height: 200px;
+	width: 350px;
+	position: fixed;
+	bottom: 97%;
+	right: 48%;
+	border:1px solid black;
+	text-align: center;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	font-size: 36px;
+	line-height: 35px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop28{
+	height: 380px;
+	width: 350px;
+	line-height: 70px;
+	position: fixed;
+	bottom: -9%;
+	right: 59%;
+	text-align: left;
+	border:1px solid black;
+	padding: 10px;
+	background: -webkit-linear-gradient(#cccccc 0%, #ffffff 100%);
+	font-family: "Chicago";
+	font-size: 72px;
+	line-height: 71px;
+	opacity: 0.6;
+		-webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 30.8s;
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 30.8s;
+  }
+
+
+ 
+   #pop29{
+	height: 100px;
+	width: 350px;
+	position: fixed;
+	bottom: 59%;
+	right: 12%;
+	text-align: center;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	font-size: 23px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop30{
+	height: 250px;
+	width: 350px;
+	position: fixed;
+	bottom:-5%;
+	text-align: center;
+	right: 85%;
+	border:1px solid black;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	font-size: 43px;
+	line-height: 42px;
+	opacity: 0.6;
+
+
+ }
+ 
+ #pop31{
+	height: 70px;
+	width: 350px;
+	position: fixed;
+	bottom: 23%;
+	right: 56%;
+	border:1px solid black;
+	padding: 10px;
+	background: aqua;
+	text-align: center;
+	font-family: "Chicago";
+	font-size: 26px;
+	line-height: 25px;
+	opacity: 0.6;
+	-webkit-animation-name: shake;
+	-webkit-animation-duration: 10s; 
+    animation-duration: 10s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both;
+         }
+         
+@-webkit-keyframes shake {
+            0%, 100% {-webkit-transform: translateX(0);} 
+            10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-5px);} 
+            20%, 40%, 60%, 80% {-webkit-transform: translateX(5px);} 
+         }
+         
+         @keyframes shake { 
+            0%, 100% {transform: translateX(0);} 
+            10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);} 
+            20%, 40%, 60%, 80% {transform: translateX(5px);} 
+         }
+         
+         .shake { 
+            -webkit-animation-name: shake; 
+            animation-name: shake; 
+         }
+
+
+ 
+ #pop32{
+	height: 230px;
+	width: 300px;
+	position: fixed;
+	bottom: 67%;
+	right: 1%;
+	border:1px solid black;
+	padding: 10px;
+	text-align: center;
+	background: fuchsia;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+
+	
+ }
+ 
+  #pop33{
+	height: 180px;
+	width: 200px;
+	position: fixed;
+	bottom: 42%;
+	right: 85%;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	text-align: center;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+ }
+ 
+  #pop34{
+  height: 700px;
+  width: 900px;
+  position: fixed;
+	bottom: 26%;
+	text-align: center;
+	right: 67%;
+	border:1px solid black;
+	padding: 10px;
+	background: yellow;
+	font-family: "Chicago";
+	font-size: 120px;
+	line-height: 119px;
+	opacity: 0.6;
+
+ }
+ 
+ 
+#pop35{
+	position: fixed;
+	bottom: 94%;
+	right: 21%;
+	font-family: "Deutsch Gothic";
+	font-size: 72px;
+	line-height: 71px;
+		font-style: italic;
+		
+		color: lime;
+ }
+ 
+ #pop36{
+	height: 234px;
+	width: 134px;
+	position: fixed;
+	bottom: 48%;
+	right: 12%;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+	-webkit-animation-name: travel3;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 2s;
+
+    animation-name: travel3;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+  }
+
+	
+
+
+ 
+ #pop37{
+	height: 90px;
+	width: 190px;
+	position: fixed;
+	text-align: left;
+	bottom: 52%;
+	right: -120px;
+	border:1px solid black;
+	padding: 10px;
+	background: -webkit-linear-gradient(#cccccc 0%, #ffffff 100%);
+	font-family: "Chicago";
+	font-size: 82px;
+	opacity: 0.6;
+
+
+ }
+
+ #pop38{
+	height: 180px;
+	width: 200px;
+	position: fixed;
+	bottom: 74%;
+	right: 23%;
+	border:1px solid black;
+	text-align: center;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+
+
+ }
+ 
+  #pop39{
+	height: 200px;
+	width: 429px;
+	line-height: 59px;
+	position: fixed;
+	text-align: center;
+	bottom: 45%;
+	right: 16%;
+	border:1px solid black;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	font-size: 60px;
+	opacity: 0.6;
+
+
+ }
+
+  #pop40{
+	height: 50px;
+	width: 140px;
+	line-height: 27px;
+	position: fixed;
+	bottom: 28%;
+	right: 47%;
+	text-align: center;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	font-size: 28px;
+	line-height: 27px;
+	opacity: 0.6;
+		-webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 7.8s;
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 7.8s;
+  }
+
+
+ 
+   #pop41{
+	height: 500px;
+	width: 350px;
+	position: fixed;
+	bottom: 37%;
+	text-align: left;
+	right: 59%;
+	border:1px solid white;
+	padding: 10px;
+	background: -webkit-linear-gradient(#ffffff 0%, #cccccc 100%);
+	font-family: "Chicago";
+	font-size: 38px;
+	line-height: 37px;
+	opacity: 0.6;
+
+
+ }
+ 
+#pop42{
+	height: 380px;
+	width: 350px;
+	line-height: 70px;
+	position: fixed;
+	bottom: 3%;
+	right: 67%;
+	text-align: left;
+	border:1px solid black;
+	padding: 10px;
+	background: -webkit-linear-gradient(#ffffff 0%, #cccccc 100%);
+	font-family: "Chicago";
+	font-size: 72px;
+	line-height: 71px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop43{
+	bottom: 73%;
+	right: 16%;
+	font-family: "Deutsch Gothic";
+	font-size: 120px;
+	line-height: 119px;
+	color: blue;
+	position: fixed
+
+
+ }
+ 
+   #pop44{
+	height: 250px;
+	width: 350px;
+	position: fixed;
+	bottom: 54%;
+	right: 10%;
+	border:1px solid black;
+	padding: 10px;
+	text-align: center;
+	background: yellow;
+	font-family: "Chicago";
+	font-size: 43px;
+	line-height: 42px;
+	opacity: 0.6;
+
+
+ }
+ 
+ #pop45{
+	height: 100px;
+	width: 350px;
+	position: fixed;
+	bottom: 28%;
+	right: 43%;
+	border:1px solid black;
+	padding: 10px;
+	background: aqua;
+	font-family: "Chicago";
+	font-size: 26px;
+	text-align: center;
+	line-height: 25px;
+	opacity: 0.6;	
+ }
+ 
+ #pop46{
+	height: 230px;
+	width: 300px;
+	position: fixed;
+	bottom: 73%;
+	right: 33%;
+	border:1px solid black;
+	text-align: center;
+	padding: 10px;
+	background: fuchsia;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+
+	
+ }
+ 
+  #pop47{
+	height: 180px;
+	width: 200px;
+	line-height: 50px;
+	position: fixed;
+	text-align: center;
+	bottom: 63%;
+	right: 39%;
+	border:1px solid black;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+
+
+
+ }
+ 
+  #pop48{
+	height: 250px;
+	width: 200px;
+	position: fixed;
+	bottom: 93%;
+	right: 53%;
+	border:1px solid black;
+	padding: 10px;
+	background: yellow;
+	text-align: center;
+	font-family: "Chicago";
+	font-size: 32px;
+	line-height: 31px;
+	opacity: 0.6;
+		-webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 3s;
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+  }
+
+ 
+ 
+#pop49{
+	height: 60px;
+	width: 210px;
+	position: fixed;
+	bottom: 84%;
+	right: 14%;
+	border:1px solid black;
+	text-align: center;
+	padding: 10px;
+	background: aqua;
+	font-family: "Chicago";
+	font-size: 25px;
+	line-height: 24px;
+		font-style: italic;
+		opacity: 0.6;
+
+ }
+ 
+ #pop50{
+	height: 400px;
+	width: 300px;
+	line-height: 51px;
+	position: fixed;
+	bottom: 54%;
+	right: 73%;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	text-align: center;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+
+
+ }
+ 
+ #pop51{
+	height: 300px;
+	width: 190px;
+	position: fixed;
+	bottom: 53%;
+	text-align: left;
+	right: -10%;
+	border:1px solid black;
+	padding: 10px;
+	background: -webkit-linear-gradient(#00ffff 0%, #ffff00 100%);
+	font-family: "Chicago";
+	font-size: 12px;
+	line-height: 11px;
+	opacity: 0.6;
+
+
+ }
+
+ #pop52{
+	height: 350px;
+	width: 200px;
+	position: fixed;
+	line-height: 66px;
+	bottom: 8%;
+	right: 29%;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	font-size: 67px;
+	line-height: 66px;
+	opacity: 0.6;
+	text-align: center;
+ }
+ 
+ #pop53{
+	height: 200px;
+	width: 350px;
+	position: fixed;
+	bottom: 42%;
+	right: 57%;
+	border:1px solid black;
+	padding: 10px;
+	background: yellow;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+	-webkit-animation-name: travel2;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 2s;
+
+    animation-name: travel2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+  }
+
+
+  #pop54{
+	height: 50px;
+	width: 350px;
+	position: fixed;
+	bottom: 15%;
+	right: 37%;
+	border:1px solid black;
+	padding: 10px;
+	background: lime;
+	text-align: center;
+	font-family: "Chicago";
+	font-size: 18px;
+	line-height: 17px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop55{
+	height: 200px;
+	width: 350px;
+	position: fixed;
+	bottom: 48%;
+	right: 63%;
+	border:1px solid white;
+	padding: 10px;
+	text-align: left;
+	background: -webkit-linear-gradient(#cccccc 0%, #ffffff 100%);
+	font-family: "Chicago";
+	font-size: 38px;
+	line-height: 37px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop56{
+	height: 200px;
+	width: 350px;
+	position: fixed;
+	bottom: 28%;
+	text-align: center;
+	right: 92%;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	font-size: 36px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop57{
+	height: 380px;
+	width: 350px;
+	line-height: 70px;
+	text-align: left;
+	position: fixed;
+	bottom: 84%;
+	right: 23%;
+	border:1px solid black;
+	padding: 10px;
+	background: -webkit-linear-gradient(#ffffff 0%, #cccccc 100%);
+	font-family: "Chicago";
+	font-size: 72px;
+	line-height: 71px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop58{
+	height: 100px;
+	width: 350px;
+	position: fixed;
+	text-align: center;
+	bottom: 54%;
+	right: 75%;
+	border:1px solid black;
+	padding: 10px;
+	background: blue;
+	font-family: "Chicago";
+	font-size: 23px;
+	line-height: 22px;
+	opacity: 0.6;
+
+
+ }
+ 
+   #pop59{
+	height: 250px;
+	width: 350px;
+	text-align: center;
+	position: fixed;
+	bottom: 37%;
+	right: 12%;
+	border:1px solid black;
+	padding: 10px;
+	background: yellow;
+	font-family: "Chicago";
+	font-size: 43px;
+	line-height: 42px;
+	opacity: 0.6;
+	-webkit-animation-name: travel3;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 0.5s;
+
+    animation-name: travel3;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+
+ }
+ 
+ #pop60{
+	height: 70px;
+	width: 350px;
+	position: fixed;
+	bottom: 39%;
+	right: 51%;
+	text-align: center;
+	border:1px solid black;
+	padding: 10px;
+	background: aqua;
+	font-family: "Chicago";
+	font-size: 26px;
+	line-height: 25px;
+	opacity: 0.6;
+		-webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 2s;
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+  }
+	
+
+ 
+ #pop61{
+	height: 230px;
+	width: 300px;
+	position: fixed;
+	bottom: 44%;
+	right: 44%;
+	border:1px solid black;
+	padding: 10px;
+	background: fuchsia;
+	text-align: center;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;
+
+	
+ }
+ 
+  #pop62{
+	height: 180px;
+	width: 200px;
+	position: fixed;
+	bottom: 66%;
+	right: 66%;
+	border:1px solid black;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	font-size: 52px;
+	text-align: center;
+	line-height: 51px;
+	opacity: 0.6;
+	text-align: center;
+ }
+
+ #pop63{
+	height: 230px;
+	width: 300px;
+	position: fixed;
+	bottom: 44%;
+	right: 44%;
+	text-align: center;
+	border:1px solid black;
+	padding: 10px;
+	background: fuchsia;
+	font-family: "Chicago";
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;	
+ }
+
+#pop64{
+	height: 230px;
+	width: 300px;
+	position: fixed;
+	bottom: 13%;
+	right: 82%;
+	border:1px solid black;
+	padding: 10px;
+	background: lime;
+	font-family: "Chicago";
+	text-align: center;
+	font-size: 52px;
+	line-height: 51px;
+	opacity: 0.6;	
+ }
+
+
+ #pop1a{
+	position: fixed;
+	bottom: 42%;
+	right: 90%;
+ }
+ 
+  #pop1a2{
+	position: fixed;
+	bottom: 42%;
+	right: 75%;
+ }
+ 
+ #pop2a{
+	position: fixed;
+	bottom: 28%;
+	right: 50%;
+
+ }
+ 
+ #pop3a{
+	position: fixed;
+	bottom: 17%;
+	right: 34%;
+
+ }
+ 
+  #pop1b{
+	position: fixed;
+	bottom: 18%;
+	right: 15%;
+
+
+ }
+ 
+ #pop4a{
+	position: fixed;
+	bottom: 85%;
+	right: 27%;
+	-webkit-animation-name: travel2;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: 10s;
+
+    animation-name: travel2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+    animation-delay: 10s;
+
+
+
+ }
+
+#pop5a{
+	position: fixed;
+	bottom: 12%;
+	right: 54%;
+ }
+ 
+ #pop5a2{
+	position: fixed;
+	bottom: 12%;
+	right: 54%;
+ }
+
+ 
+ #pophoofd{
+	position: fixed;
+	bottom: 60%;
+	right: 70%; 
+
+ }
+ 
+ #pophoofd2{
+	position: fixed;
+	bottom: 60%;
+	right: 60%; 
+
+ }
+
+ 
+ .hover img:last-child{display:none}
+.hover:hover img:first-child{display:none}
+.hover:hover img:last-child{display:inline-block}	
+
+ 
+ #masker{
+	position: fixed;
+	bottom: 60%;
+	right: 15%;
+	opacity: 0.8; 
+
+
+ }
+ 
+ #rainbow{
+	position: fixed;
+	bottom: 86%;
+	right: 10%;
+	opacity: 0.6; 
+
+
+ }
+
+#shark{
+	position: fixed;
+	bottom: 0;
+	right: 30%;
+	opacity: 0.8; 
+}
+ 
+
+#camera{
+	position: fixed;
+	bottom: 90%;
+	right: 5%; 
+	 }
+	 
+#camera2{
+	position: fixed;
+	bottom: 50%;
+	right: 35%; 
+	 }	 
+ 
+
+#disco{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	opacity: 0.8; 
+	-webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 7.8s;
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 7.8s;
+
+ }
+ 
+ #disco2{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	opacity: 0.8; 
+	-webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 7.8s;
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 7.8s;
+ }
+
+
+#palmboom{
+	position: fixed;
+	bottom: 20%;
+	right: 5%;
+	opacity: 0.7; 
+	}
+	
+#dolfijn{
+	position: fixed;
+	bottom: 60%;
+	right: 20%;
+ }
+	
+	#dolfijn2{
+	position: fixed;
+	bottom: 5%;
+	right: 20%;
+ }
+
+	
+#bomen{
+	position: fixed;
+	bottom: 68%;
+	right: 70%;
+	opacity: 0.6; 
+	}
+	
+#stilleven{
+	position: fixed;
+	bottom: 34%;
+	right: 55%;
+	opacity: 0.7; 
+	}	
+
+
+ 
+#close{
+	right: 2;
+	top: 2;
+	float: right;
+	
+ }
+
+.greydout {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0; 
+}
+
+.greydout:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+#img{
+	position: fixed;
+	right: 30%;
+	bottom: 30%;
+}
+
+#img2{
+	position: fixed;
+	right: 69%;
+	bottom: 12%;
+}
+
+#img3{
+	position: fixed;
+	right: 24%;
+	bottom: 67%;
+}
+
+#img4{
+	position: fixed;
+	right: 50%;
+	bottom: 45%;
+}
+
+
+
+#banner1{
+	position: fixed;
+	background-color: blue;
+	font-family: Chicago;
+	font-size: 70px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+}	
+
+#banner2{
+	position: fixed;
+	right: 32%;
+	line-height: 47px;
+	color: yellow;
+	font-family: 'Chicago';
+	font-size: 50px;
+	height:  100%;
+}	
+
+#banner3{
+	position: fixed;
+	right: 5%;
+	bottom: 33%;
+	font-family: 'Deutsch Gothic';
+	font-size: 36px;
+	background-color: lime;
+	width: : 50%;
+}	
+
+#banner4{
+	position: fixed;
+	right: 75%;
+	font-family: 'Chicago';
+	font-size: 25px;
+	text-align: center;
+	background-color: fuchsia;
+	height: 75%;
+	top:0;
+}	
+
+#banner5{
+	position: fixed;
+	right: 50%;
+	font-family: 'Deutsch Gothic';
+	text-align: center;
+	font-size: 14px;
+	background-color: Aqua;
+	height: 100%;
+	top: 0;
+}	
+
+#banner6{
+	position: fixed;
+	right: 90%;
+	bottom: 10%;
+	font-family: 'Avenir';
+	text-align: center;
+	font-size: 20px;
+	background-color: lime;
+	height: 60%;
+}	
+
+#banner7{
+	position: fixed;
+	right: 23%;
+	bottom: 10%;
+	font-family: 'Avenir';
+	text-align: center;
+	font-size: 20px;
+	background-color: blue;
+	height: 100%;
+}	
+
+
+
+
+
+    </style>
+   
+<script>
+  
+setTimeout(function(){
+document.getElementById('pop').style.visibility = "visible";
+},3300);
+
+setTimeout(function(){
+document.getElementById('pop').style.visibility = "hidden";
+},5000);
+	
+setTimeout(function(){
+document.getElementById('pop2').style.visibility = "visible";
+},9400);
+
+setTimeout(function(){
+document.getElementById('pop3').style.visibility = "visible";
+},42800)
+
+setTimeout(function(){
+document.getElementById('pop4').style.visibility = "visible";
+},21800)
+
+setTimeout(function(){
+document.getElementById('pop4').style.visibility = "hidden";
+},31800)
+
+setTimeout(function(){
+document.getElementById('pop4').style.visibility = "visible";
+},31900)
+
+setTimeout(function(){
+document.getElementById('pop4').style.visibility = "hidden";
+},32000)
+
+setTimeout(function(){
+document.getElementById('pop4').style.visibility = "visible";
+},32100)
+
+setTimeout(function(){
+document.getElementById('pop4').style.visibility = "hidden";
+},32200)
+
+setTimeout(function(){
+document.getElementById('pop5').style.visibility = "visible";
+},14500)
+
+setTimeout(function(){
+document.getElementById('pop6').style.visibility = "visible";
+},59000)
+
+
+setTimeout(function(){
+document.getElementById('pop6').style.visibility = "hidden";
+},67000)
+
+setTimeout(function(){
+document.getElementById('pop7').style.visibility = "visible";
+},45000)
+
+setTimeout(function(){
+document.getElementById('pop8').style.visibility = "visible";
+},27800)
+
+setTimeout(function(){
+document.getElementById('pop8').style.visibility = "hidden";
+},43000)
+
+setTimeout(function(){
+document.getElementById('pop9').style.visibility = "visible";
+},34800)
+
+setTimeout(function(){
+document.getElementById('pop10').style.visibility = "visible";
+},500)
+
+setTimeout(function(){
+document.getElementById('pop11').style.visibility = "visible";
+},2500)
+
+setTimeout(function(){
+document.getElementById('pop12').style.visibility = "visible";
+},14500)
+
+
+setTimeout(function(){
+document.getElementById('pop13').style.visibility = "visible";
+},26000)
+
+setTimeout(function(){
+document.getElementById('pop14').style.visibility = "visible";
+},32000)
+
+setTimeout(function(){
+document.getElementById('pop15').style.visibility = "visible";
+},40500)
+
+setTimeout(function(){
+document.getElementById('pop15').style.visibility = "hidden";
+},43500)
+
+setTimeout(function(){
+document.getElementById('pop16').style.visibility = "visible";
+},44000);
+	
+setTimeout(function(){
+document.getElementById('pop17').style.visibility = "visible";
+},47000);
+
+setTimeout(function(){
+document.getElementById('pop17').style.visibility = "hidden";
+},52000);
+
+setTimeout(function(){
+document.getElementById('pop18').style.visibility = "visible";
+},51000)
+
+setTimeout(function(){
+document.getElementById('pop18').style.visibility = "visible";
+},59000)
+
+setTimeout(function(){
+document.getElementById('pop19').style.visibility = "visible";
+},55000)
+
+setTimeout(function(){
+document.getElementById('pop19').style.visibility = "hidden";
+},57500)
+
+setTimeout(function(){
+document.getElementById('pop20').style.visibility = "visible";
+},58500)
+
+setTimeout(function(){
+document.getElementById('pop21').style.visibility = "visible";
+},62000)
+
+setTimeout(function(){
+document.getElementById('pop22').style.visibility = "visible";
+},65000)
+
+setTimeout(function(){
+document.getElementById('pop22').style.visibility = "visible";
+},73000)
+
+setTimeout(function(){
+document.getElementById('pop23').style.visibility = "visible";
+},68000)
+
+setTimeout(function(){
+document.getElementById('pop23').style.visibility = "hidden";
+},73000)
+
+
+setTimeout(function(){
+document.getElementById('pop24').style.visibility = "visible";
+},71000)
+
+setTimeout(function(){
+document.getElementById('pop25').style.visibility = "visible";
+},76000)
+
+setTimeout(function(){
+document.getElementById('pop26').style.visibility = "visible";
+},79000)
+
+setTimeout(function(){
+document.getElementById('pop27').style.visibility = "visible";
+},82000)
+
+setTimeout(function(){
+document.getElementById('pop27').style.visibility = "hidden";
+},84000)
+
+setTimeout(function(){
+document.getElementById('pop27').style.visibility = "visible";
+},85000)
+
+setTimeout(function(){
+document.getElementById('pop28').style.visibility = "visible";
+},84000)
+
+setTimeout(function(){
+document.getElementById('pop29').style.visibility = "visible";
+},86000)
+
+setTimeout(function(){
+document.getElementById('pop30').style.visibility = "visible";
+},88000)
+
+setTimeout(function(){
+document.getElementById('pop31').style.visibility = "visible";
+},3000)
+
+setTimeout(function(){
+document.getElementById('pop32').style.visibility = "visible";
+},8200)
+
+setTimeout(function(){
+document.getElementById('pop32').style.visibility = "hidden";
+},14000)
+
+
+setTimeout(function(){
+document.getElementById('pop33').style.visibility = "visible";
+},10000)
+
+setTimeout(function(){
+document.getElementById('pop34').style.visibility = "visible";
+},19500)
+
+setTimeout(function(){
+document.getElementById('pop35').style.visibility = "visible";
+},24000)
+
+setTimeout(function(){
+document.getElementById('pop35').style.visibility = "hidden";
+},28000)
+
+setTimeout(function(){
+document.getElementById('pop35').style.visibility = "visible";
+},35000)
+
+setTimeout(function(){
+document.getElementById('pop36').style.visibility = "visible";
+},32500)
+
+
+setTimeout(function(){
+document.getElementById('pop37').style.visibility = "visible";
+},37000)
+
+setTimeout(function(){
+document.getElementById('pop38').style.visibility = "visible";
+},41000)
+
+setTimeout(function(){
+document.getElementById('pop38').style.visibility = "hidden";
+},45000)
+
+
+setTimeout(function(){
+document.getElementById('pop39').style.visibility = "visible";
+},51000)
+
+setTimeout(function(){
+document.getElementById('pop40').style.visibility = "visible";
+},54500)
+
+setTimeout(function(){
+document.getElementById('pop41').style.visibility = "visible";
+},56500)
+
+setTimeout(function(){
+document.getElementById('pop42').style.visibility = "visible";
+},9500)
+
+setTimeout(function(){
+document.getElementById('pop43').style.visibility = "visible";
+},12000)
+
+setTimeout(function(){
+document.getElementById('pop43').style.visibility = "hidden";
+},12000)
+
+setTimeout(function(){
+document.getElementById('pop44').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop45').style.visibility = "visible";
+},24000)
+
+setTimeout(function(){
+document.getElementById('pop46').style.visibility = "visible";
+},29000)
+
+setTimeout(function(){
+document.getElementById('pop47').style.visibility = "visible";
+},35500)
+
+setTimeout(function(){
+document.getElementById('pop47').style.visibility = "hidden";
+},39500)
+
+
+setTimeout(function(){
+document.getElementById('pop48').style.visibility = "visible";
+},40000)
+
+setTimeout(function(){
+document.getElementById('pop49').style.visibility = "visible";
+},43000)
+
+setTimeout(function(){
+document.getElementById('pop49').style.visibility = "hidden";
+},50000)
+
+
+setTimeout(function(){
+document.getElementById('pop50').style.visibility = "visible";
+},50500)
+
+setTimeout(function(){
+document.getElementById('pop51').style.visibility = "visible";
+},56000)
+
+setTimeout(function(){
+document.getElementById('pop52').style.visibility = "visible";
+},64500)
+
+setTimeout(function(){
+document.getElementById('pop52').style.visibility = "hidden";
+},68500)
+
+
+setTimeout(function(){
+document.getElementById('pop53').style.visibility = "visible";
+},61000)
+
+setTimeout(function(){
+document.getElementById('pop54').style.visibility = "visible";
+},66000)
+
+setTimeout(function(){
+document.getElementById('pop55').style.visibility = "visible";
+},69000)
+
+setTimeout(function(){
+document.getElementById('pop55').style.visibility = "hidden";
+},74300)
+
+setTimeout(function(){
+document.getElementById('pop56').style.visibility = "visible";
+},72000)
+
+setTimeout(function(){
+document.getElementById('pop57').style.visibility = "visible";
+},76000)
+
+setTimeout(function(){
+document.getElementById('pop58').style.visibility = "visible";
+},78000)
+
+setTimeout(function(){
+document.getElementById('pop59').style.visibility = "visible";
+},80000)
+
+setTimeout(function(){
+document.getElementById('pop59').style.visibility = "hidden";
+},85000)
+
+setTimeout(function(){
+document.getElementById('pop59').style.visibility = "visible";
+},86000)
+
+setTimeout(function(){
+document.getElementById('pop59').style.visibility = "hidden";
+},867000)
+
+setTimeout(function(){
+document.getElementById('pop60').style.visibility = "visible";
+},83000)
+
+setTimeout(function(){
+document.getElementById('pop61').style.visibility = "visible";
+},85500)
+
+setTimeout(function(){
+document.getElementById('pop62').style.visibility = "visible";
+},89000)
+
+setTimeout(function(){
+document.getElementById('pop63').style.visibility = "visible";
+},5523)
+
+setTimeout(function(){
+document.getElementById('pop64').style.visibility = "visible";
+},12542)
+
+setTimeout(function(){
+document.getElementById('banner5').style.visibility = "visible";
+},10000)
+
+setTimeout(function(){
+document.getElementById('banner6').style.visibility = "visible";
+},34254)
+
+
+setTimeout(function(){
+document.getElementById('pop1a').style.visibility = "visible";
+},1000)
+
+setTimeout(function(){
+document.getElementById('pop2a').style.visibility = "visible";
+},5000)
+
+setTimeout(function(){
+document.getElementById('pop3a').style.visibility = "visible";
+},7000)
+
+setTimeout(function(){
+document.getElementById('pop4a').style.visibility = "visible";
+},500)
+
+setTimeout(function(){
+document.getElementById('pop1b').style.visibility = "visible";
+},10000)
+
+setTimeout(function(){
+document.getElementById('pop5a').style.visibility = "visible";
+},13000)
+
+setTimeout(function(){
+document.getElementById('pophoofd').style.visibility = "visible";
+},13480)
+
+setTimeout(function(){
+document.getElementById('masker').style.visibility = "visible";
+},25280)
+
+setTimeout(function(){
+document.getElementById('rainbow').style.visibility = "visible";
+},24000)
+
+setTimeout(function(){
+document.getElementById('rainbow').style.visibility = "hidden";
+},29000)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "visible";
+},32000)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "hidden";
+},32100)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "visible";
+},32200)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "hidden";
+},32300)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "visible";
+},32300)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "hidden";
+},32400)
+
+setTimeout(function(){
+document.getElementById('disco').style.visibility = "visible";
+},45000)
+
+setTimeout(function(){
+document.getElementById('camera').style.visibility = "visible";
+},25238)
+
+setTimeout(function(){
+document.getElementById('bomen').style.visibility = "visible";
+},13385)
+
+setTimeout(function(){
+document.getElementById('stilleven').style.visibility = "visible";
+},47292)
+
+setTimeout(function(){
+document.getElementById('dolfijn').style.visibility = "visible";
+},38210)
+
+
+
+setTimeout(function(){
+document.getElementById('pop').style.visibility = "visible";
+},19000);
+
+setTimeout(function(){
+document.getElementById('pop').style.visibility = "hidden";
+},15000);
+	
+setTimeout(function(){
+document.getElementById('pop2').style.visibility = "visible";
+},19000);
+
+setTimeout(function(){
+document.getElementById('pop2').style.visibility = "hidden";
+},15000);
+
+
+setTimeout(function(){
+document.getElementById('pop5').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop5').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop10').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop10').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop11').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop11').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop12').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop12').style.visibility = "hidden";
+},15000)
+
+
+setTimeout(function(){
+document.getElementById('pop31').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop31').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop32').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop32').style.visibility = "hidden";
+},15000)
+
+
+setTimeout(function(){
+document.getElementById('pop33').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop33').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop42').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop42').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('banner5').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('banner5').style.visibility = "visible";
+},19000)
+
+
+
+
+setTimeout(function(){
+document.getElementById('pop43').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop43').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop63').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop63').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop64').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop64').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop1a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop1a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop2a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop2a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop3a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop3a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop4a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop4a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop1b').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop1b').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop5a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop5a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pophoofd').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pophoofd').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('banner1').style.visibility = "visible";
+},6302)
+
+setTimeout(function(){
+document.getElementById('banner2').style.visibility = "visible";
+},32569)
+
+setTimeout(function(){
+document.getElementById('banner3').style.visibility = "visible";
+},59321)
+
+setTimeout(function(){
+document.getElementById('banner3').style.visibility = "visible";
+},27443)
+
+setTimeout(function(){
+document.getElementById('banner1').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('banner2').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('banner3').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('banner4').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('banner4').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('dolfijn').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('dolfijn').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('banner1').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('banner2').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('banner3').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('bomen').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('bomen').style.visibility = "visible";
+},19000)
+
+
+setTimeout(function(){
+document.getElementById('pop1a').style.visibility = "visible";
+},1000)
+
+setTimeout(function(){
+document.getElementById('pop2a').style.visibility = "visible";
+},5000)
+
+setTimeout(function(){
+document.getElementById('pop3a').style.visibility = "visible";
+},7000)
+
+setTimeout(function(){
+document.getElementById('pop4a').style.visibility = "visible";
+},500)
+
+setTimeout(function(){
+document.getElementById('pop1b').style.visibility = "visible";
+},10000)
+
+setTimeout(function(){
+document.getElementById('pop5a').style.visibility = "visible";
+},13000)
+
+setTimeout(function(){
+document.getElementById('pophoofd').style.visibility = "visible";
+},13480)
+
+setTimeout(function(){
+document.getElementById('palmboom').style.visibility = "visible";
+},20000)
+
+setTimeout(function(){
+document.getElementById('rainbow').style.visibility = "visible";
+},24000)
+
+setTimeout(function(){
+document.getElementById('rainbow').style.visibility = "hidden";
+},29000)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "visible";
+},32000)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "hidden";
+},32100)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "visible";
+},32200)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "hidden";
+},32300)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "visible";
+},32300)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "hidden";
+},32400)
+
+setTimeout(function(){
+document.getElementById('disco').style.visibility = "visible";
+},45000)
+
+
+
+/*
+	function closeSelf(){
+    self.close();
+    return true;
+}
+*/
+
+
+
+</script>
+
+<script>
+var shutdownEngaged = $("#scratch")[0];
+$("#scratch2")
+.mouseenter(function() {
+shutdownEngaged.play();
+});
+</script>
+
+<script>
+	
+	$( document ).ready(function() {
+    	
+    	$( 'input[type="submit"],.beeld1,.beeld2').click(function() {
+        	$(this).parent().parent().hide();
+        	return false;
+    	}); 
+    	
+    	
+    	
+	    makeDiv();
+	
+	    function makeDiv() {
+	        var numRand = Math.floor(Math.random());
+	        var divsize = 200;
+	        var posx = (Math.random() * ($('body').width() - divsize)).toFixed();
+	        var posy = (Math.random() * (900 - divsize)).toFixed();
+	        
+	        //alert(posy);
+				        
+	        $newdiv = $("<div class='dream' id='dream'><a href='SAM2.html'><img src='./assets/dreamknop.gif'></a></div>").css({
+	            'left': posx + 'px',
+	            'top': posy + 'px'
+	        });
+	        $newdiv.appendTo('body').delay(1000).fadeIn(100, function () {
+	            $(this).remove();
+	            makeDiv();
+	        });
+	    }	
+ 	
+	});
+	
+	
+
+
+
+</script>
+
+
+</head>
+
+<body> 
+<!--<div class="dream" id="dream"><a href="SAM2.html"><img src="./assets/dreamknop.gif"></a></div>-->
+
+
+ 
+<div id="muziek">
+<audio autoplay>
+<source src="./assets/VoicesBrazil.mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+<div id="muziek">
+<audio autoplay>
+<source src="./assets/VoicesBrazil2.mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+<div id="muziek">
+<audio autoplay>
+<source src="./assets/VoicesBrazil3.mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+<div id="muziek">
+<audio autoplay>
+<source src="./assets/VoicesBrazil4.mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+<div id="muziek">
+<audio autoplay>
+<source src="./assets/VoicesBrazil5.mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+
+<div id="pop" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain" onsubmit="return closeSelf()"><font>
+What's your name?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop2" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form  method="post" enctype="text/plain"><font>
+How old are you?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop3" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form  method="post" enctype="text/plain"><font>
+Where do you live?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="pop5" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have a pet?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop8" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you married?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop4" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+What's your favorite color?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop6" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+what's your favorite band?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="pop7" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+When is your birthday?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+
+<div id="pop9" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have children?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop10" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+What's your job?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+
+<div id="pop11" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">XTTTT</button>
+	<form method="post" enctype="text/plain"><font>
+Do you smoke?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop12" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+What's your favorite meal?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+
+<div id="pop13" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+What's your mom's name?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+	
+<div id="pop14" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+What's your dad's name?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="pop15" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have allergies?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="pop16" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain" onsubmit="return closeSelf()"><font>
+What's your favorite drink?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="pop17" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form  method="post" enctype="text/plain"><font>
+Do you like rain?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop18" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form  method="post" enctype="text/plain"><font>
+What's your shoe size?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="pop19" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+How much do you weigh?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="pop20" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you drink alcohol?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="pop21" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have a mental disease?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop22" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you like pickles?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+	
+<div id="pop23" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you like coffee?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+
+<div id="pop24" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+How tall are you?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop25" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have a car?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop26" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have a bike?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<marquee id="banner6" behavior="scroll" direction="up" scrollamount="20" style="visibility: hidden;">W<br>h<br>a<br>t<br>?</marquee>
+
+<div id="pop27" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you sleep naked?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop28" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you happy?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<marquee id="banner3" behavior="scroll" direction="right" scrollamount="20" style="visibility: hidden;">Heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey!</marquee>
+
+<div id="pop29" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you suffer?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop30" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+What's your favorite smell?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop20" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you drink alcohol?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop21" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have a mental disease?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="img3"><img src="./assets/fistzw.gif" class="greydout" height="150px" width="180px"></div>
+
+
+<div id="pop22" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you like pickles?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop23" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you like coffee?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+
+<div id="pop24" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+How tall are you?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop25" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have a car?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<marquee id="banner7" behavior="scroll" direction="up" scrollamount="20" style="visibility: hidden;">W<br>h<br>a<br>t<br>?</marquee>
+
+
+<div id="pop26" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have a bike?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop27" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you sleep naked?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="pop28" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you happy?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop29" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you suffer?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop30" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+What's your favorite smell?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop31" style="visibility:hidden;">
+	<button id="close">X</button>
+	<form><font>
+		
+What are you wearing?</font><input type="text" name="name">
+<input type="submit" value="Send" class="closer">
+</form>
+</div>
+
+<div id="pop32" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you cold?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<a class="hover" href="#">
+	<img id="pop2a" style="visibility: hidden;" src="./assets/vuist2zw.gif">
+	<img id="pop2a" src="./assets/vuist2.gif">
+           </a>
+	
+<div id="pop33" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you too hot?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop34" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+What's your favorite movie?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+
+<div id="pop35" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+What's your favorite book?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop36" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have siblings?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop37" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Did you graduate college?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="img4"><img src="./assets/blink.gif" class="greydout"></div>
+
+
+<div id="pop38" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you like sunshine?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop39" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you like singing birds?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop40" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Have you travelled?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop41" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you stressed easily?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop42" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you make friends easily?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<marquee id="banner1" behavior="scroll" direction="left" scrollamount="20" style="visibility: hidden;">Do you complain a lot?</marquee>
+
+<div id="pop43" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you like art?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop44" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you trust people?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop45" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you like order?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+
+<div id="pop46" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you chaotic?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="img2"><img src="./assets/seezw.gif" class="greydout" width="200" height="100"></div>
+
+
+<div id="pop47" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you love yourself?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop48" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you confident?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop49" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you work hard?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop50" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you passionate?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop51" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you heterosexual?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop52" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you stick to the rules?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+		
+<a class="hover" href="#">
+	<img id="pop5a" style="visibility: hidden;" src="./assets/BTarrxroc2zw.gif">
+	<img id="pop5a2" src="./assets/BTarrxroc3.gif">
+           </a>
+           
+
+<div id="pop53" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you get angry easily?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<marquee id="banner5" behavior="scroll" direction="up" scrollamount="20" style="visibility: hidden;">?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?<br>?</marquee>
+
+
+<div id="pop54" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you always busy?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop55" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X44444</button>
+	<form method="post" enctype="text/plain"><font>
+Are you excited often?</font><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+
+<div id="pop56" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you panic easily?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="bomen" style="visibility: hidden;">
+<img src="bomen.jpg" width="600" height="400"> </div>
+
+<div id="pop57" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you scared?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop58" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you easy to satisfy?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop59" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you dislike yourself?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="img"><img src="./assets/peekaboozw.gif" class="greydout" width="200" height="100"></div>
+
+
+<div id="pop60" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Are you a leader?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="stilleven" style="visibility: hidden;">
+<img src="stilleven.jpg" width="300" height="200"> </div>
+
+
+<div id="pop61" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you enjoy fantasy?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop62" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<form method="post" enctype="text/plain"><font>
+Do you have good intentions?</font><br><input type="text" name="name">
+<input type="submit" value="Send">
+</form>
+</div>
+
+<div id="pop63" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<font>Choose one:<br></font>
+
+	<div>
+		<img src="./assets/island2.jpg" width="100px" height="75px" class="beeld1">
+		<img src="./assets/swamp2.jpg" width="100px" height="75px" class="beeld2">
+	</div>
+</div>
+
+<div id="pop64" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<font>Choose one:</font>
+
+	<div>
+		<img src="./assets/kathoofd.png" width="100px" height="100px" class="beeld1">
+		<img src="./assets/hondhoofd.png" width="100px" height="75px" class="beeld2">
+	</div>
+</div>
+
+
+<marquee id="banner2" behavior="scroll" srollamount="20" direction="up" style="visibility: hidden;"><font>I<br>s<br> <br>t<br>h<br>i<br>s<br> <br>a<br>n<br>n<br>o<br>y<br>i<br>n<br>g<br> <br>?<br></font></marquee>
+
+
+<a class="hover" href="#">
+	<img id="pop1a" style="visibility: hidden;" src="./assets/neezw.gif">
+	<img id="pop1a2" src="./assets/nee2.gif">
+           </a>
+
+<a class="hover" href="#">
+	<img id="pop3a" style="visibility: hidden;" src="./assets/hartjezw.gif" width="100" height="100">
+	<img id="pop3a" src="./assets/hartje.gif">
+           </a>
+
+
+<div id="pop4a" style="visibility:hidden;">
+	<img src="./assets/krabbels-bloemen-glitter-8019451.gif">
+	</div>
+		
+<a class="hover" href="#">
+	<img id="pophoofd" style="visibility: hidden;" src="./assets/pophoofd2.png" height="30" width="25"> </div>
+	<img id="pophoofd2" src="./assets/pophoofd3.gif" height="150" width="125"> </div>
+           </a>
+           
+  <a class="hover" href="#">
+	<img id="camera" style="visibility: hidden;" src="./assets/securityzw.gif"> </div>
+	<img id="camera2" src="./assets/SC.gif" height="400" width="600"> </div>
+    </a>
+    
+     <a class="hover" href="#">
+	<img id="palmboom" style="visibility: hidden;" src="./assets/palmtreezw.jpg" width="300" height="200"> </div>
+	<img id="palmboom" src="./assets/palmtree.jpg.jpg" width="300" height="200"> </div>
+    </a>
+
+    
+    
+         
+
+   
+</div>	
+	
+<div id="rainbow" style="visibility: hidden;">
+	<img src="./assets/rainbow-05.png" width="200" height="100"> </div>
+
+<div id="shark" style="visibility: hidden;">
+	<img src="./assets/shark.png" height="1000" width="900"> </div>
+	
+<a class="hover" href="#">
+	<img id="disco" style="visibility: hidden;" src="./assets/discobalzw.gif">
+	<img id="disco2" src="./assets/discobal2.gif">
+           </a>
+	
+<a class="hover" href="#">
+	<img id="dolfijn" style="visibility: hidden;" src="./assets/dolfijnzw.gif" width="60" height="40">
+	<img id="dolfijn2" src="./assets/dolfijn.gif" width="1000" height="600">
+           </a>
+
+<marquee id="banner4" behavior="scroll" direction="left" scrollamount="5" style="visibility: hidden;">H<br>o<br>w<br> <br>a<br>r<br>e<br> <br>y<br>o<br>u<br> <br>?</marquee>
+
+
+
+
+</body>
+
+</html>

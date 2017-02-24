@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+	body {
+background-image:url(./assets/droom.gif);
+background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+    
+.button {
+    background-color: #ffffff; 
+    border: 1px solid black;
+    color: black;
+    font-family: 'Helvetica';
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#muziek {
+display:none;
+}
+
+#container { 
+	position: relative; }
+#filmpje { 
+	position: fixed; left: 28%; top:17%; }
+#countdown { 
+	position: absolute;
+	min-width: 100%;
+	
+}
+    </style>
+
+<script>setTimeout(function(){window.location.href='index.html'},10000);
+
+
+
+
+</script>
+  </head>
+<body>
+
+<div id="muziek">
+<audio autoplay loop>
+<source src="./assets/zen.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<div id="stem">
+<audio id="stem" autoplay loop>
+<source src="./assets/VoicesBrazil(2).mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+<div id="stem">
+<audio id="stem" autoplay>
+<source src="./assets/VoicesBrazil2(2).mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+
+<div id="stem">
+<audio id="stem" autoplay>
+<source src="./assets/VoicesBrazil3(2).mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+<div id="stem">
+<audio id="stem" autoplay>
+<source src="./assets/VoicesBrazil4(2).mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+<div id="muziek">
+<audio autoplay>
+<source src="./assets/Guided%20Meditation%20-%20Blissful%20Deep%20Relaxation.mp3/" type="audio/mpeg">
+</audio>
+</div>
+
+<a href="index.html" class="button">Wake up</a>
+
+<div class="container">
+	<div id="filmpje">
+	<video width="625" height="545" autoplay>
+	<source src="./assets/meditatie.mp4" type="video/mp4">
+	</video></div>
+	
+	<div id="countdown"><img src="./assets/countdown.gif"></div>
+</div>
+                                           
+
+</body>
+</html>
